@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"      
+             x:Class="SLSNZ.MainPage">
+
+	<StackLayout>		
+				
+		
+		<Label Text="Display Name"
+               TextColor="Gray"
+               FontSize="Default"                
+               HorizontalOptions="Start" />
+
+		<Label Text="{Binding SelectedPerson.DisplayName}"     
+			    FontSize="Default"          
+               HorizontalOptions="Start"                
+               VerticalOptions="Start"></Label>
+
+     <Label Text="First Name"
+               TextColor="Gray"
+               FontSize="Default"                     
+               HorizontalOptions="Start" />
+
+		<Label Text="{Binding SelectedPerson.FirstName}"              
+               FontSize="Large" 
+               HorizontalOptions="Start"                
+               VerticalOptions="Start" />
+
+			<Label Text="Last Name"  
+               TextColor="Gray"
+               FontSize="Default"                   
+               HorizontalOptions="Start" />
+
+		<Label Text="{Binding SelectedPerson.LastName}"              
+               FontSize="Default"                       
+               HorizontalOptions="Start"                
+               VerticalOptions="Start" />
+
+			<Button Text="Refresh"
+                        Command="{Binding RefreshCommand}"
+                        Grid.Row="0" Grid.Column="1"/>
+
+	</StackLayout>
+
+</ContentPage>
