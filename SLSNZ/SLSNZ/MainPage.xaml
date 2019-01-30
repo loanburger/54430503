@@ -22,7 +22,7 @@
                HorizontalOptions="Start" />
 
 		<Label Text="{Binding SelectedPerson.FirstName}"              
-               FontSize="Large" 
+               FontSize="Default" 
                HorizontalOptions="Start"                
                VerticalOptions="Start" />
 
